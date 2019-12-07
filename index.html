@@ -1,10 +1,133 @@
-<html>   
-  <head><title>李宏宇的个人网站</title></head>   
-<body>     
-<div>李宏宇的个人网站正在建设中……联系QQ116911</div>     
-  <div>北京时间：<span id="time"></span></div>   
-</body> 
-<script>   
-(function(){      var time = (new Date()).toLocaleString();   document.getElementById("time").innerHTML = time    })(); 
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>李宏宇的个人网站</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #EFEFEF;
+            font-weight: 500;
+            font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+        }
+
+        #container {
+            width: 500px;
+            height: 820px;
+            margin: 0 auto;
+        }
+
+        div.search {
+            padding: 30px 0;
+        }
+
+        form {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input, button {
+            border: none;
+            outline: none;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+        }
+
+        button {
+            height: 42px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        /*搜索框*/
+        .serchbar {
+            background: #EFEFEF;
+        }
+
+            .serchbar form {
+                height: 42px;
+            }
+
+            .serchbar input {
+                width: 300px;
+                border-radius: 42px;
+                border: 1px solid #1BC3FB;
+                background: #E2E4EE;
+                transition: .3s linear;
+                float: right;
+                font-size: 16px;
+            }
+
+                .serchbar input:focus {
+                    width: 300px;
+                }
+
+            .serchbar button {
+                background: none;
+                top: -2px;
+                right: 0;
+            }
+
+                .serchbar button:before {
+                    content: "\f002";
+                    font-family: FontAwesome;
+                    color: #324b4e;
+                }
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+    <div id="container">
+
+
+        <div class="search serchbar">
+            <form action="http://www.baidu.com/baidu" target="_blank">
+                <input name="ie" type="hidden" value="utf-8" />
+                <input name="tn" type="hidden" value="baidu" />
+                <input type="text" name="word" placeholder="网络世界，搜索一下！" />
+                <button type="submit" title="百度一下"></button>
+            </form>
+        </div>
+
+
+        <div>李宏宇的个人网站正在建设中……联系QQ116911</div>
+        <div>北京时间：<span id="time"></span></div>
+
+    </div>
+
+  
+
+<script>
+
+(function(){      var time = (new Date()).toLocaleString();   document.getElementById("time").innerHTML = time    })();
 </script> 
+
+
+
+</body>
 </html>
